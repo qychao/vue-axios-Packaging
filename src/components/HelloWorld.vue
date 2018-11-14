@@ -6,6 +6,7 @@
 
 <script>
   import {demoApi} from '@/service/getData'
+  import consoleDemo from '@/common/console'
   export default {
   name: 'HelloWorld',
   data () {
