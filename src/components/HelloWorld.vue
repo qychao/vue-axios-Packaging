@@ -85,7 +85,7 @@
     .container-wrapper
       display grid
       grid-gap 5px
-      grid-template-columns repeat(auto-fit,396px)
+      grid-template-columns 1fr 2fr 1fr
       grid-template-rows repeat(2,100px)
       div
        border 1px solid #ddd
