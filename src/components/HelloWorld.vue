@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import {demoApi} from '@/service/getData'
+  import {demoApi,indexList} from '@/service/getData'
   import consoleDemo from '@/common/console'
   export default {
   name: 'HelloWorld',
@@ -42,6 +42,8 @@
     async initData(){
       let res=await demoApi();
       this.userInfo=res.data.user;
+      let res2=await indexList();
+      console.log(res2);
     }
   }
 }

@@ -25,4 +25,8 @@ export const produceNewsData = fake_result({
     token:"6d497db44eec413f9955d51e7ffc801a"
   }
 );
-
+export const indexList=fake_result({
+  articleList:[
+    Mock.Random.dataImage()
+  ]
+});
