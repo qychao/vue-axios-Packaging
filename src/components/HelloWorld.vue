@@ -11,6 +11,16 @@
       </div>
     </div>
     <div class="swiper-wrapper"></div>
+    <div class="container">
+      <div class="container-wrapper">
+        <div>{{userInfo.cityId}}</div>
+        <div>{{userInfo.cityId}}</div>
+        <div>{{userInfo.cityId}}</div>
+        <div>{{userInfo.cityId}}</div>
+        <div>{{userInfo.cityId}}</div>
+        <div>{{userInfo.cityId}}</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,7 +41,6 @@
   methods:{
     async initData(){
       let res=await demoApi();
-      console.log(res);
       this.userInfo=res.data.user;
     }
   }
@@ -70,4 +79,16 @@
     height 500px
     margin 0 auto
     border 1px solid #999
+  .container
+    width 1200px
+    margin 0 auto
+    .container-wrapper
+      display grid
+      grid-gap 5px
+      grid-template-columns repeat(auto-fit,396px)
+      grid-template-rows repeat(2,100px)
+      div
+       border 1px solid #ddd
+       text-align center
+       line-height 100px
 </style>
